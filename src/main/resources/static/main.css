@@ -1,0 +1,597 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    transition: transform 0.5s ease;
+}
+
+.inter-semiBold {
+            font-family: "Inter", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-style: normal;
+        }
+
+body {
+    overflow-x: hidden;
+}
+
+.background {
+    background-color: #080213;
+}
+
+.icon {
+    display: flex;
+    position: fixed;
+    top: 33px;
+    left: 33px;
+    z-index: 100;
+    transition: transform 0.5s ease;
+}
+
+.icon-container { 
+    transition: transform 0.5s ease;
+}
+
+nav { 
+    display: flex;
+    justify-content: flex-end;
+    position: fixed; /* Use absolute positioning */
+    top: 33px; /* 33px from the top */
+    right: 152px; /* 152px from the right */
+    width: auto; /* Ensure width adapts to content */
+    margin: 0; /* Remove any default margin */
+    z-index: 100;
+}
+
+nav a {
+    font-family: Inter;
+    font-size: 32px;
+    color: #FFF;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    position: relative;
+    display: inline-block; /* Ensure the element can be transformed */
+    transition: transform 0.5s ease; /* Apply transition on transform */
+    transform: translateY(0); /* Set initial transform state */
+}
+
+nav li {
+    position: relative;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    transform: translateY(5px);
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 82px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Underline effect with animation */
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px; /* Thickness of the underline */
+    background-color: white;
+    bottom: -4px; /* Position the underline just below the text */
+    left: 0;
+    transform: scaleX(0); /* Initially, the underline is hidden */
+    transform-origin: right; /* Start the animation from the right */
+    transition: transform 0.3s ease; /* Animation duration and easing */
+    opacity: 0; /* Initially invisible */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Add opacity transition */
+}
+
+        /* Hover effect */
+nav a:hover::after {
+    transform: scaleX(1); /* Expand the underline to full width */
+    transform-origin: left; /* Animate from left to right */
+    opacity: 1; /* Fade in the underline */
+}
+
+.hamburger-menu { 
+    position: fixed;
+    right: 31px;
+    top: 31px;
+    z-index: 100;
+    transition: transform 0.5s ease;
+}
+
+.BackgroundArt {
+    display: block; /* Ensures the image is treated as a block-level element */
+    margin-left: auto; /* Pushes the image to the right */
+    margin-right: auto; /* Pushes the image to the left, centering it */
+    position: relative; /* Allows you to adjust the top position */
+    top: 136px; /* Positions the image 136px from the top */
+}
+
+.text-background-1 {
+    width: 44.125rem;
+    height: 69.5625rem;
+    flex-shrink: 0;
+    position:absolute;
+    right: -2.1rem;
+    top: 19rem;
+}
+
+.gradeint-bar {
+    width: 92.5%;
+    height: 4.0625rem;
+    flex-shrink: 0;
+    background: linear-gradient(90deg, #EB9A59 0%, #FF7CFF 50%, #4FD0D0 100%);
+    position: absolute; /* Position relative to the parent container */
+    top: 62.8rem; /* 62.8rem from the top of the parent container */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust to ensure it's centered */
+}
+
+.l-name {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 12.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1rem;
+    position:absolute;
+    top:39.12rem;
+    left:3.75%;
+}
+
+.f-name {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 6.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.8125rem;
+
+    position: absolute;
+    top: 34.5rem;
+    left: 3.75%;
+}
+
+.about-text {
+    color: var(--Light_White, #D6D6D6);
+    font-family: Inter;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    width: 30.8125rem;
+
+    position:absolute;
+    top:31.81rem;
+    right:0.69rem;
+}
+
+.left-arrow-1 {
+    width: 6.4375rem;
+    height: 2.75rem;
+    border-radius: 1.875rem;
+    border: 1px solid #FFF;
+    flex-shrink: 0;
+
+    position: absolute;
+    top: 27.46rem;
+    right:13rem;
+    transition: transform 0.5s ease;
+}
+
+.rar {
+    padding-left: 0.69rem;
+}
+
+.lar {
+    padding-left: 3.06rem;
+}
+
+.right-arrow-1 {
+    width: 6.4375rem;
+    height: 2.75rem;
+    border-radius: 1.875rem;
+    border: 1px solid #FFF;
+    flex-shrink: 0;
+
+    position: absolute;
+    top: 27.46rem;
+    right: 5.5rem;
+    transition: transform 0.5s ease;
+}
+
+.right-arrow:hover {
+    transform: translate(0.5rem)
+}
+
+.left-arrow:hover {
+    transform: translate(-0.5rem);
+}
+
+.page-1 {
+    width:100vw;
+    height:100vh;
+}
+
+.page-2 {
+    width: 100vw;
+    height: 100vh;
+    position:relative;
+    top:0;
+}
+
+.page-3 {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    top: 0;
+}
+
+.text-background-2 {
+    width: 56.625rem;
+    height: 121.8125rem;
+    flex-shrink: 0;
+
+    position: relative;
+    top:-3rem;
+}
+
+.history {
+    width: 27.4375rem;
+    height: 4.9375rem;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    position: absolute;
+    top: 3.56rem;
+    left: 4rem;
+}
+
+.history-content {
+    width: 33.75rem;
+    height: 31.9375rem;
+    flex-shrink: 0;
+    color: var(--Light_White, #D6D6D6);
+    font-family: Inter;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    left: 4rem;
+    top: 12rem;
+
+}
+
+.text-background-3 { 
+    width: 56.625rem;
+    height: 121.8125rem;
+    flex-shrink: 0;
+
+    position: absolute;
+    top:11.56rem;
+    right:-15rem;
+}
+
+.left-arrow-2 {
+    width: 6.4375rem;
+    height: 2.75rem;
+    border-radius: 1.875rem;
+    border: 1px solid #FFF;
+    flex-shrink: 0;
+
+    position:absolute;
+    top: 27.25rem;
+    right:13rem;
+    transition: transform 0.5s ease;
+}
+
+.right-arrow-2 {
+    width: 6.4375rem;
+    height: 2.75rem;
+    border-radius: 1.875rem;
+    border: 1px solid #FFF;
+    flex-shrink: 0;
+
+    position: absolute;
+    top: 27.25rem;
+    right: 5.5rem;
+}
+
+.about-text-2 { 
+    width: 33.75rem;
+    height: 31.9375rem;
+    flex-shrink: 0;
+    color: var(--Light_White, #D6D6D6);
+    font-family: Inter;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    position: absolute;
+    top: 33rem;
+    right: 0.88rem; 
+}
+
+.project-title { 
+     color: #FFF;
+     font-family: Inter;
+     font-size: 9.375rem;
+     font-style: normal;
+     font-weight: 500;
+     line-height: normal;
+     letter-spacing: 0.75rem;
+
+     position: relative;
+     left: 2.37rem;
+}
+
+.project-container p { 
+    width: 35%;
+    height: 43rem;
+    flex-shrink: 0;
+    color: var(--Light_White, #D6D6D6);
+    font-family: Inter;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    left: 4rem;
+}
+
+.text-background-4 {
+    position: relative;
+    top: 0;
+    left: -16rem;
+
+}
+
+.project-paragraph-1 {
+    padding-top: 0rem;
+}
+
+.project-paragraph-2 {
+    padding-top: 10rem;
+}
+
+.project-paragraph-3 {
+    padding-top: 25rem;
+}
+
+.wb-image { 
+    width: 60%;
+    flex-shrink: 0;
+
+    position: absolute;
+    right: 1.69rem;
+
+}
+
+.page-4 {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background: #FFF;
+}
+
+.p4-art {
+    width: 95%;
+    position: relative;
+    left: 2.5%;
+    top: 2.5%;
+}
+
+.why-choose {
+    width: 50.375rem;
+    height: 5.1875rem;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Inter;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    position: relative;
+    left: 4rem;
+    top:1.94rem;
+}
+
+.title-light {
+    color: #000;
+    font-family: Inter;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.title-one { 
+    position: relative;
+    left: 4rem;
+    top: 3.44rem;
+}
+
+.title-two {
+    position: absolute;
+    left: 35%;
+    top:70%;
+}
+
+.title-three {
+    position: absolute;
+    right: 22%;
+    top: 70%;
+}
+
+.paragraph-light { 
+    width: 33.125rem;
+    height: 13.25rem;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Inter;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.paragraph-one {
+    position: relative;
+    top: 3rem;
+    left: 4rem;
+}
+
+.paragraph-two {
+    position:absolute;
+    top:75%;
+    left: 35%;
+} 
+.paragraph-three {
+    position: absolute;
+    top: 75%;
+    right: 5%;
+} 
+
+.page-5 {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.background-image-2 { 
+    width:100vw;
+    height:100vh;
+
+}
+
+.gb-2 { 
+    position: absolute;
+    top: 75vh;
+}
+
+.get-in-touch-text {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 15.625rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.78125rem;
+
+    position: absolute;
+    top: 47.5vh;
+    left: 2.5%;
+    width: 95%;
+
+    font-size: calc(95vw / 6.4); /* Adjust the divisor as needed to fit the text */
+    max-width: 95vw;
+    margin: 0 auto; /* Center the text */
+    white-space: nowrap; /* Prevent text from wrapping to a new line */
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+}
+
+.navbar {
+    transition: top 0.5s ease, opacity 0.5s ease;
+}
+
+/* REGION MENU */
+
+#menuIcon {
+    width: 60px;
+    border-radius: 50%;
+    position: fixed;
+    top: 40px;
+    right: 60px;
+    cursor: pointer;
+    z-index: 100;
+  }
+  
+  .menu-box {
+    width: 0;
+    height: 0;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 10;
+    border-bottom-left-radius: 1000%;
+    transition: width 0.5s, height 0.5s, border-radius 0.5s;
+  }
+  
+  .menu-box.open-menu {
+    width: 100%;
+    height: 100vh;
+    border-bottom-left-radius: 0;
+  }
+  
+  .menu-box.open-menu ul li {
+    opacity: 1;
+    transform: translateY(0);
+    transition: transform .75s, opacity .75s;
+    transition-delay: 0.1s;
+  }
+  
+  .menu-box ul li {
+    list-style: none;
+    margin: 30px;
+    text-align: center;
+    z-index: 10;
+    opacity: 0;
+    transform: translateY(30px);
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+  }
+  
+  .menu-box ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 500;
+    position: relative;
+    text-shadow: 0 0 0 var(--accent);
+    transition: text-shadow 0.5s, transform 0.5s;
+    z-index: 10;
+  }
+  
+  .menu-box ul li a:hover {
+    text-shadow: 4px 4px 0 #FF7CFF;
+    transform: translateY(-5px);
+
+  }
+  /*TODO: Add underline to the text*/
+  .menu-box ul li a:hover::before {
+    width: 10px;
+    height: 10px;
+    color: white;
+  }
+
+.navbar.shown { 
+    opacity: 0;
+    visibility: hidden;
+}
