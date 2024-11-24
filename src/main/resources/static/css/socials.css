@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    transition: transform 0.5s ease;
+}
+
+body {
+    overflow: hidden;
+}
+
+.background-socials {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.background { background-color: rgb(10, 3, 25) }
+
+.socials-list {
+    position: absolute;
+    top: 16.31rem;
+    left: 3.08rem;
+    z-index: 100;
+    overflow: hidden;
+}
+
+.socials-list li {
+    margin-top: 1.06rem;
+}
+
+.socials-list a {
+    color: #FFF;
+    font-family: Inter, serif;
+    font-style: normal;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.16rem;
+    text-decoration: none;
+    transition: transform 0.5s ease; /* Apply transition on transform */
+    transform: translateY(0); /* Set initial transform state */
+}
+
+.socials-list a:hover {
+    text-decoration: underline;
+    transform: translateY(5px);
+}
+
+.socials-text-background-1 {
+    position: absolute;
+    top: 2.75rem;
+    left: -2.65rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.socials-heading {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 200px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1rem;
+
+    position: absolute;
+    bottom: 1rem;
+    left: 4vw;
+}

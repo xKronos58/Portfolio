@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    transition: transform 0.5s ease;
+}
+
+body {
+    overflow: hidden;
+}
+
+.background { background-color: rgb(11, 3, 27) }
+
+.portfolio-title {
+    color: #FFF;
+    font-family: Inter, serif;
+    font-size: 200px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 16px;
+
+    position: absolute;
+    top: 55%;
+    right: 5%;
+}
+
+.portfolio-list {
+    position: absolute;
+    top: 261px;
+    left: 1016px;
+    z-index: 100;
+    overflow: hidden;
+}
+
+.portfolio-list li {
+    margin-top: 1.06rem;
+}
+
+.portfolio-list a {
+    color: #FFF;
+    font-family: Inter, serif;
+    font-style: normal;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.16rem;
+    text-decoration: none;
+    transition: transform 0.5s ease; /* Apply transition on transform */
+    transform: translateY(0); /* Set initial transform state */
+}
+
+.portfolio-list a:hover {
+    text-decoration: underline;
+    transform: translateY(5px);
+}
+
+ul {
+    list-style-type: none;
+}
+
+.after-portfolio-lines hr {
+    display: list-item;
+    position: absolute;
+    right: 98px;
+    top: 281px;
+    width: 380px;
+    height: 1px;
+    background-color: #FFF;
+}
+
+.portfolio-text-background-1 {
+position: absolute;
+    top: 44px;
+    right: -77px;
+}

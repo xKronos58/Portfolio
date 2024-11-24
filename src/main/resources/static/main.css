@@ -2,7 +2,11 @@
 
 * {
     transition: transform 0.5s ease;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
 }
+
+*::-webkit-scrollbar { display: none; }
 
 .inter-semiBold {
             font-family: "Inter", sans-serif;
@@ -11,8 +15,10 @@
             font-style: normal;
         }
 
+
 body {
     overflow-x: hidden;
+    background-color: #080213;
 }
 
 .background {
@@ -23,7 +29,7 @@ body {
     display: flex;
     position: fixed;
     top: 33px;
-    left: 33px;
+    left: 5%;
     z-index: 100;
     transition: transform 0.5s ease;
 }
@@ -62,7 +68,7 @@ nav li {
     position: relative;
 }
 
-nav a:hover {
+nav a:hover:not(.disabled) {
     text-decoration: underline;
     transform: translateY(5px);
 }
@@ -106,13 +112,17 @@ nav a:hover::after {
     z-index: 100;
     transition: transform 0.5s ease;
 }
-
 .BackgroundArt {
-    display: block; /* Ensures the image is treated as a block-level element */
-    margin-left: auto; /* Pushes the image to the right */
-    margin-right: auto; /* Pushes the image to the left, centering it */
-    position: relative; /* Allows you to adjust the top position */
-    top: 136px; /* Positions the image 136px from the top */
+    display: block; /* Treat the image as a block element */
+    margin-left: auto;
+    margin-right: auto;
+    position: relative; /* Allows for controlled positioning */
+    top: 136px; /* Keeps the image offset from the top */
+    width: 100%; /* Ensures it stretches across the width */
+    height: auto; /* Maintains aspect ratio */
+    max-height: 2100px; /* Optional: Limit height relative to viewport */
+    object-fit: cover; /* Ensures the image fills the container while cropping sides */
+    overflow-x: hidden; /* Hides the edges that exceed the container */
 }
 
 .text-background-1 {
@@ -124,7 +134,7 @@ nav a:hover::after {
     top: 19rem;
 }
 
-.gradeint-bar {
+.gradient-bar {
     width: 92.5%;
     height: 4.0625rem;
     flex-shrink: 0;
@@ -138,13 +148,13 @@ nav a:hover::after {
 .l-name {
     color: #FFF;
     font-family: Inter;
-    font-size: 12.5rem;
+    font-size: calc(65vw / 6.4);
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     letter-spacing: 1rem;
-    position:absolute;
-    top:39.12rem;
+    position: absolute;
+    top: 37rem;
     left:3.75%;
 }
 
@@ -191,10 +201,18 @@ nav a:hover::after {
 
 .rar {
     padding-left: 0.69rem;
+    position: relative;
+    top: -0.25rem;
+    left: 1.5rem;
+    rotate: 90deg;
 }
 
 .lar {
     padding-left: 3.06rem;
+    position: relative;
+    top: -1.5rem;
+    left: 0.1rem;
+    rotate: 90deg;
 }
 
 .right-arrow-1 {
@@ -408,8 +426,8 @@ nav a:hover::after {
     font-weight: 500;
     line-height: normal;
     position: relative;
-    left: 4rem;
-    top:1.94rem;
+    left: 2.5vw;
+    top: 1vh;
 }
 
 .title-light {
@@ -421,10 +439,20 @@ nav a:hover::after {
     line-height: normal;
 }
 
-.title-one { 
-    position: relative;
-    left: 4rem;
-    top: 3.44rem;
+.why-choose-content-paragraphs {
+    display: inline-flex;
+    margin-left: 2.5vw;
+    max-width: 95%;
+    margin-top: -2%
+}
+
+.wcc-group-2 { margin-left: 5vw }
+.wcc-group-3 { margin-left: 5vw }
+
+/*.title-one {
+    position: absolute;
+    left: 3.3%;
+    top: 70%;
 }
 
 .title-two {
@@ -437,10 +465,10 @@ nav a:hover::after {
     position: absolute;
     right: 22%;
     top: 70%;
-}
+}*/
 
-.paragraph-light { 
-    width: 33.125rem;
+.paragraph-light {
+    width: calc(85vw/3);
     height: 13.25rem;
     flex-shrink: 0;
     color: #000;
@@ -451,9 +479,9 @@ nav a:hover::after {
     line-height: normal;
 }
 
-.paragraph-one {
-    position: relative;
-    top: 3rem;
+/*.paragraph-one {
+    position: absolute;
+    top: 75%;
     left: 4rem;
 }
 
@@ -461,12 +489,12 @@ nav a:hover::after {
     position:absolute;
     top:75%;
     left: 35%;
-} 
+}
 .paragraph-three {
     position: absolute;
     top: 75%;
     right: 5%;
-} 
+} */
 
 .page-5 {
     width: 100vw;
@@ -479,7 +507,25 @@ nav a:hover::after {
     width:100vw;
     height:100vh;
 
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 0px;
+    max-height: 1169px;
+    object-fit: cover;
+    overflow-x: hidden;
 }
+
+/*display: block; !* Treat the image as a block element *!
+margin-left: auto;
+margin-right: auto;
+position: relative; !* Allows for controlled positioning *!
+top: 136px; !* Keeps the image offset from the top *!
+width: 100%; !* Ensures it stretches across the width *!
+height: auto; !* Maintains aspect ratio *!
+max-height: 2100px; !* Optional: Limit height relative to viewport *!
+object-fit: cover; !* Ensures the image fills the container while cropping sides *!
+overflow-x: hidden; !* Hides the edges that exceed the container *!*/
 
 .gb-2 { 
     position: absolute;
@@ -488,12 +534,11 @@ nav a:hover::after {
 
 .get-in-touch-text {
     color: #FFF;
-    font-family: Inter;
-    font-size: 15.625rem;
+    font-family: Inter, serif;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    letter-spacing: -0.78125rem;
+    letter-spacing: calc(-7vw / 6.4);
 
     position: absolute;
     top: 47.5vh;
@@ -594,4 +639,48 @@ nav a:hover::after {
 .navbar.shown { 
     opacity: 0;
     visibility: hidden;
+}
+
+.disabled {
+    color: dimgray;
+}
+
+.disabled::after {
+
+}
+
+nav a:not(.disabled):hover::after {
+    transform: scaleX(1); /* Reveal the underline */
+    transform-origin: left; /* Animate from left to right */
+    opacity: 1; /* Make it visible */
+}
+
+/* Disabled links */
+nav a.disabled {
+    color: gray; /* Grayed-out text */
+    pointer-events: none; /* Disable interaction */
+    position: relative; /* Ensure proper stacking with ::after */
+}
+
+nav a.disabled::after {
+    content: ''; /* Prevent the underline animation from affecting disabled links */
+    opacity: 0; /* Keep the underline invisible for disabled links */
+}
+
+@media screen and (max-width: 768px) {
+    .icon {
+        display: none;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .background {
+        background-color: #080213
+    }
 }
