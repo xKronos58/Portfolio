@@ -1,3 +1,3 @@
 #Welcome to my protfolio 
 
-https://finleycrowther.au
+www.finleycrowther.au
