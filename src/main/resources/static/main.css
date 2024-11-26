@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+html {
+    display: block;
+}
+
 * {
     transition: transform 0.5s ease;
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
@@ -538,7 +542,7 @@ overflow-x: hidden; !* Hides the edges that exceed the container *!*/
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    letter-spacing: calc(-7vw / 6.4);
+    letter-spacing: calc(-7vw / 11.4);
 
     position: absolute;
     top: 47.5vh;
@@ -683,4 +687,14 @@ nav a.disabled::after {
     .background {
         background-color: #080213
     }
+}
+
+.arr3 {
+    top: 20%;
+    border-color: black;
+}
+
+.arr4 {
+    top: 63%;
+    border-color: black;
 }

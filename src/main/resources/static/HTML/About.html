@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>About</title>
+    <style>html{display: none} body{background-color: rgb(11,3,27)}</style>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="description" content="A portfolio website for Finley Crowther"/>
     <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="../css/about.css">
     <script src="https://localhost:35729/livereload.js"></script>
     <script src="../Menu.js"></script>
+    <script src="../arrows.js"></script>
     <link rel="icon" type="image/x-icon" href="images/FC.png">
 </head>
 <body class="background">
@@ -16,7 +19,8 @@
         <li><a href="../index.html">HOME</a></li>
         <li><a href="About.html">ABOUT</a></li>
         <li><a href="Portfolio.html">PORTFOLIO</a></li>
-        <li><a href="Socials.html">CONTACT</a></li>
+        <li><a href="Socials.html">SOCIALS</a></li>
+        <li><a href="Resume.html">RESUME</a></li>
         <li><a href="Hire.html">HIRE</a></li>
         <li><a href="help.html">HELP</a></li>
         <li><a href="testing.html">TESTING</a></li>
@@ -24,7 +28,6 @@
 </div>
 <div class="scroll-container">
     <!-- <button onclick="invertColors();" style="position: fixed; top: 33px; left: 66px;">C</button> -->
-    <div class="page-1">
         <div class="iconContainer">
             <a href="../index.html"><img src="images/FC.png" width="44" height="46" class="icon" alt="FC icon"></a>
         </div>
@@ -44,7 +47,28 @@
                       stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
         </div>
+    <img src="../images/ABOUT_Bakground_art.png" alt="Background Art" class="background-about">
+    <div class="gradient-bar"></div>
+    <h1 class="about-me-title">ABOUT ME</h1>
+    <h2 class="abt-h2 brief">BRIEF</h2>
+    <p class="abt-p about-brief"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed  dignissim sapien. Pellentesque habitant morbi tristique senectus et  netus et malesuada fames ac turpis egestas. Duis tristique, nisi non  placerat tristique, justo lorem venenatis ex, vel auctor lacus purus vel tortor. Vestibulum rhoncus aliquet aliquet. Nullam vitae enim aliquet,  bibendum enim venenatis, dignissim arcu. Integer viverra risus lorem,  nec tempor metus semper ac. Ut nisi arcu, feugiat tristique cursus  pharetra, tempus vitae mauris.</p>
+    <div class="left-arrow-2 left-arrow abt-arr" onclick="scrollToBottom()">
+        <svg class="rar" xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43" fill="none">
+            <path d="M34.0416 21.5H8.95825M8.95825 21.5L21.4999 34.0416M8.95825 21.5L21.4999 8.95831"
+                  stroke="#D6D6D6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
     </div>
+    <div class="right-arrow-2 right-arrow abt-arr" onclick="scrollDown()">
+        <svg class="lar" xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43" fill="none">
+            <path d="M8.95841 21.5H34.0417M34.0417 21.5L21.5001 34.0416M34.0417 21.5L21.5001 8.95831"
+                  stroke="#D6D6D6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </div>
+    <h2 class="abt-h2 my-story">MY STORY</h2>
+    <p class="abt-p my-story-1"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed  dignissim sapien. Pellentesque habitant morbi tristique senectus et  netus et malesuada fames ac turpis egestas. Duis tristique, nisi non  placerat tristique, justo lorem venenatis ex, vel auctor lacus purus vel tortor. Vestibulum rhoncus aliquet aliquet. Nullam vitae enim aliquet,  bibendum enim venenatis, dignissim arcu. Integer viverra risus lorem,  nec tempor metus semper ac. Ut nisi arcu, feugiat tristique cursus  pharetra, tempus vitae mauris.
+        Aliquam erat volutpat. Morbi sagittis risus id odio euismod, sed  fermentum nulla ultricies. Integer tempus cursus urna, ultricies laoreet felis tempus ac. Mauris pellentesque dignissim sapien, ut dignissim  dolor finibus nec. Sed lacinia enim sed faucibus laoreet. Aenean  pellentesque mollis dictum. Ut maximus vitae ipsum eu convallis.  Suspendisse ut turpis porttitor, rutrum quam et, condimentum dui. Mauris scelerisque sagittis </p>
+    <p class="abt-p my-story-2"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed  dignissim sapien. Pellentesque habitant morbi tristique senectus et  netus et malesuada fames ac turpis egestas. Duis tristique, nisi non  placerat tristique, justo lorem venenatis ex, vel auctor lacus purus vel tortor. Vestibulum rhoncus aliquet aliquet. Nullam vitae enim aliquet,  bibendum enim venenatis, dignissim arcu. Integer viverra risus lorem,  nec tempor metus semper ac. Ut nisi arcu, feugiat tristique cursus  pharetra, tempus vitae mauris.
+        Aliquam erat volutpat. Morbi sagittis risus id odio euismod, sed  fermentum nulla ultricies. Integer tempus cursus urna, ultricies laoreet felis tempus ac. Mauris pellentesque dignissim sapien, ut dignissim  dolor finibus nec. Sed lacinia enim sed faucibus laoreet. Aenean  pellentesque mollis dictum. Ut maximus vitae ipsum eu convallis.  Suspendisse ut turpis porttitor, rutrum quam et, condimentum dui. Mauris scelerisque sagittis </p>
 </div>
 </body>
 </html>

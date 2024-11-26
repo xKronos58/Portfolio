@@ -20,7 +20,7 @@ body {
     position: absolute;
     top: 16.31rem;
     left: 3.08rem;
-    z-index: 100;
+    z-index: 1;
     overflow: hidden;
 }
 
@@ -69,3 +69,5 @@ ul {
     bottom: 1rem;
     left: 4vw;
 }
+
+.line-after-text {}

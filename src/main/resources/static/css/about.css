@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    transition: transform 0.5s ease;
+}
+
+.background {
+    background-color: rgb(11, 3, 27)
+}
+
+.background-about {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    aspect-ratio: auto;
+}
+
+.about-me-title {
+    color: #FFF;
+    font-family: Inter, serif;
+    font-size: 200px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 16px;
+
+    position: absolute;
+    left: 5%;
+    top: 55%;
+}
+
+.abt-h2 {
+    color: #FFF;
+    font-family: Inter, serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.brief {
+    position: absolute;
+    left: 5%;
+    top: 10%;
+}
+
+.abt-p {
+    color: #FFF;
+    font-family: Inter, serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.about-brief {
+    position: absolute;
+    left: 5%;
+    top: 17.5%;
+    width: 55%;
+}
+
+.my-story {
+    position: absolute;
+    top: 100%;
+    left: 5%;
+}
+
+.abt-arr {
+    position: absolute;
+    top: 80%;
+}
+
+.my-story-1{
+    position: absolute;
+    top: 110%;
+    left: 5%;
+    width: 40%;
+}
+
+.my-story-2 {
+    position: absolute;
+    top: 110%;
+    left: 55%;
+    width: 40%;
+}
